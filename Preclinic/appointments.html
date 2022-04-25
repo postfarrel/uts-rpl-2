@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <title>Kasir Toko Berkah</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
@@ -25,7 +25,7 @@
         <div class="header">
             <div class="header-left">
                 <a href="index-2.html" class="logo">
-                    <img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+                    <img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Kasir<br>Toko Berkah</span>
                 </a>
             </div>
             <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -48,7 +48,7 @@
                                             </span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">John Doe</span> added
-                                                    new task <span class="noti-title">Patient appointment booking</span>
+                                                    new task <span class="noti-title">New Employee</span>
                                                 </p>
                                                 <p class="noti-time"><span class="notification-time">4 mins ago</span>
                                                 </p>
@@ -168,7 +168,7 @@
                         </li>
                         <li class="active">
                             <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Employee</span></a>
-                        </li>
+                        </li>                        
                         <li>
                             <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
                         </li>
@@ -254,11 +254,11 @@
             <div class="content">
                 <div class="row">
                     <div class="col-sm-4 col-3">
-                        <h4 class="page-title">Appointments</h4>
+                        <h4 class="page-title">Employee</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
                         <a href="add-appointment.html" class="btn btn btn-primary btn-rounded float-right"><i
-                                class="fa fa-plus"></i> Add Appointment</a>
+                                class="fa fa-plus"></i> Add Employee</a>
                     </div>
                 </div>
                 <div class="row">
@@ -267,28 +267,28 @@
                             <table class="table table-striped custom-table">
                                 <thead>
                                     <tr>
-                                        <th>Appointment ID</th>
-                                        <th>Patient Name</th>
+                                        <th>Employee ID</th>
+                                        <th>Name</th>
                                         <th>Age</th>
-                                        <th>Doctor Name</th>
-                                        <th>Department</th>
-                                        <th>Appointment Date</th>
-                                        <th>Appointment Time</th>
+                                        <th>DOB</th>
+                                        <th>Address</th>
+                                        <th>Accepted Date</th>
+                                        <th>Task</th>
                                         <th>Status</th>
                                         <th class="text-right">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>APT0001</td>
+                                        <td>301</td>
                                         <td><img width="28" height="28" src="assets/img/user.jpg"
-                                                class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-                                        <td>35</td>
-                                        <td>Henry Daniels</td>
-                                        <td>Cardiology</td>
-                                        <td>30 Dec 2018</td>
-                                        <td>10:00am - 11:00am</td>
-                                        <td><span class="custom-badge status-red">Inactive</span></td>
+                                                class="rounded-circle m-r-5" alt="">Balmond Huan</td>
+                                        <td>44</td>
+                                        <td>05-04-1978</td>
+                                        <td>Jl Katamso</td>
+                                        <td>20-07-2019</td>
+                                        <td>Manager</td>
+                                        <td><span class="custom-badge status-green">Active</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
@@ -304,15 +304,39 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>APT0002</td>
+                                        <td>302</td>
                                         <td><img width="28" height="28" src="assets/img/user.jpg"
-                                                class="rounded-circle m-r-5" alt=""> Denise Stevens</td>
-                                        <td>35</td>
-                                        <td>Henry Daniels</td>
-                                        <td>Cardiology</td>
-                                        <td>30 Dec 2018</td>
-                                        <td>10:00am - 11:00am</td>
+                                                class="rounded-circle m-r-5" alt="">Mariananana</td>
+                                        <td>25</td>
+                                        <td>05-04-1997</td>
+                                        <td>Jl PHH Mustofa</td>
+                                        <td>20-12-2019</td>
+                                        <td>QA</td>
                                         <td><span class="custom-badge status-green">Active</span></td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
+                                                    aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="edit-appointment.html"><i
+                                                            class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal"
+                                                        data-target="#delete_appointment"><i
+                                                            class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>303</td>
+                                        <td><img width="28" height="28" src="assets/img/user.jpg"
+                                                class="rounded-circle m-r-5" alt="">Ken Kaneki</td>
+                                        <td>30</td>
+                                        <td>05-04-1992</td>
+                                        <td>Jl Ghoul</td>
+                                        <td>20-12-2018</td>
+                                        <td>Cashier</td>
+                                        <td><span class="custom-badge status-red">Unactive</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown"
